@@ -1,11 +1,5 @@
 export const projects = [
   {
-    title: "UBC AgroBot | Firmware Engineer",
-    description: "Developing robust power management firmware on STM32 platforms. Engineering efficient power-switching logic and charging protocols to maximize energy transfer for field operations.",
-    tech: ["STM32", "C", "Firmware", "Real-time Monitoring"],
-    link: "#"
-  },
-  {
     title: "AI Hub",
     description: "Architected a full-stack web application to automate content broadcasting. Integrated AI-driven features to streamline media production and user interaction.",
     tech: ["Next.js", "Tailwind CSS", "TypeScript"],
@@ -27,6 +21,6 @@ export const projects = [
 
 export const contact = {
   email: "virendesai711@gmail.com",
-  github: "https://github.com/yourusername",
-  linkedin: "https://linkedin.com/in/yourusername"
+  github: "https://github.com/VirenD101",
+  linkedin: "https://linkedin.com/in/viren-desai-8848aa351"
 };
