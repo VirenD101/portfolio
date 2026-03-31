@@ -24,3 +24,9 @@ export const projects = [
     link: "#"
   }
 ];
+
+export const contact = {
+  email: "virendesai711@gmail.com",
+  github: "https://github.com/yourusername",
+  linkedin: "https://linkedin.com/in/yourusername"
+};

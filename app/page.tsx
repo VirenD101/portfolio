@@ -2,116 +2,117 @@ import { projects } from '@/lib/projects';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#fafafa] text-zinc-900 font-sans selection:bg-indigo-100 selection:text-indigo-900">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-16 px-8 py-16 md:py-32">
-        
-        {/* Left Sidebar */}
-        <aside className="md:w-1/3 md:sticky md:top-32 md:h-fit space-y-10">
-          <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-100 mb-8">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-              </span>
-              <span className="text-[10px] font-mono font-bold text-emerald-700 uppercase tracking-widest">
-                System Active • Co-op May 2026
-              </span>
-            </div>
-            
-            <h1 className="text-6xl font-black tracking-tighter text-zinc-900">Viren Desai</h1>
-            <p className="mt-6 text-lg text-zinc-500 leading-relaxed max-w-xs">
-              Computer Engineering at <span className="text-zinc-900 font-medium text-indigo-600">UBC</span>. 
-              Specializing in firmware architecture and modern web systems.
-            </p>
+    <div className="h-screen overflow-y-auto snap-y snap-mandatory bg-[#050505] text-zinc-300 font-mono selection:bg-emerald-500/30">
+      
+      {/* SECTION 1: HERO SNAP */}
+      <section className="h-screen w-full snap-start flex flex-col justify-center items-center p-6 bg-[#050505] border-b border-zinc-900">
+        <div className="space-y-6 text-center">
+          <div className="flex justify-center gap-2 mb-4">
+            <span className="text-emerald-500 animate-pulse">viren@ubc:~$</span>
+            <span className="text-white">cat --v2.0</span>
           </div>
-
-          <div className="flex gap-5 items-center">
-            <a href="mailto:virendesai711@gmail.com" className="p-2 rounded-full border border-zinc-200 hover:border-indigo-500 hover:text-indigo-600 transition-all">
-              <span className="text-xs font-bold uppercase tracking-widest px-2">Email</span>
-            </a>
-            <a href="#" className="text-xs font-bold uppercase tracking-widest text-zinc-400 hover:text-indigo-600 transition-colors">GitHub</a>
-            <a href="#" className="text-xs font-bold uppercase tracking-widest text-zinc-400 hover:text-indigo-600 transition-colors">LinkedIn</a>
+          <h1 className="text-7xl md:text-9xl font-black tracking-tighter text-white uppercase italic leading-none">
+            Viren Desai
+          </h1>
+          <p className="text-zinc-500 text-lg md:text-xl font-medium tracking-[0.2em]">
+            UBC COMPUTER ENGINEERING
+          </p>
+          <div className="pt-20 flex flex-col items-center gap-4 opacity-50">
+            <span className="text-[10px] uppercase tracking-[0.5em]">Scroll to Initialize</span>
+            <div className="h-16 w-px bg-gradient-to-b from-emerald-500 to-transparent animate-bounce" />
           </div>
+        </div>
+      </section>
 
-          <div className="pt-10">
-            <h2 className="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-400 mb-6">Technical Stack</h2>
-            <div className="flex flex-wrap gap-2">
-              {["C++", "Python", "SystemVerilog", "STM32", "Next.js", "Java", "FPGA"].map((s) => (
-                <span key={s} className="px-3 py-1.5 bg-zinc-900 text-zinc-100 rounded-md text-[11px] font-mono shadow-sm">
-                  {s}
-                </span>
-              ))}
+      {/* SECTION 2: WORK EXPERIENCE (AgroBot & Others) */}
+      <section className="h-screen w-full snap-start flex items-center justify-center p-6 bg-[#09090b]">
+        <div className="max-w-5xl w-full border border-zinc-800 rounded-xl overflow-hidden bg-black/40 backdrop-blur-md shadow-2xl">
+          <div className="bg-zinc-900/50 px-4 py-2 border-b border-zinc-800 flex justify-between items-center">
+            <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest">Directory: /usr/viren/experience</span>
+            <div className="flex gap-1.5">
+              <div className="w-2 h-2 rounded-full bg-zinc-800" />
+              <div className="w-2 h-2 rounded-full bg-zinc-800" />
             </div>
           </div>
-        </aside>
-
-        {/* Right Content */}
-        <main className="md:w-2/3 space-y-32">
-          
-          <section>
-            <div className="flex items-center gap-4 mb-12">
-              <h2 className="text-xs font-bold uppercase tracking-[0.3em] text-zinc-400">Featured Work</h2>
-              <div className="h-[1px] flex-1 bg-zinc-200"></div>
-            </div>
-            
-            <div className="grid gap-10">
-              {projects.map((p) => (
-                <div key={p.title} className="group relative">
-                  <div className="flex justify-between items-end mb-4">
-                    <h3 className="text-2xl font-bold tracking-tight text-zinc-800 group-hover:text-indigo-600 transition-colors">
-                      {p.title}
-                    </h3>
-                  </div>
-                  <p className="text-zinc-500 text-base leading-relaxed mb-6 max-w-xl">
-                    {p.description}
-                  </p>
-                  <div className="flex flex-wrap gap-4 items-center">
-                    {p.tech.map((t) => (
-                      <span key={t} className="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">
-                        {t}
-                      </span>
-                    ))}
-                  </div>
-                  <div className="mt-8 h-[1px] w-full bg-zinc-100 group-hover:bg-indigo-100 transition-colors" />
+          <div className="p-8 md:p-12">
+            <h2 className="text-white text-3xl font-bold mb-10 flex items-center gap-4">
+              <span className="text-emerald-500 text-xl font-mono">01.</span> Technical_Work
+            </h2>
+            <div className="space-y-12">
+              <div className="relative pl-8 border-l border-emerald-500/30">
+                <div className="absolute left-[-5px] top-1.5 w-2 h-2 bg-emerald-500 rounded-full shadow-[0_0_10px_#10b981]" />
+                <div className="flex flex-col md:flex-row md:justify-between mb-2">
+                  <h3 className="text-xl font-bold text-white">Firmware Engineer | UBC AgroBot</h3>
+                  <span className="text-xs text-zinc-500 font-bold uppercase tracking-widest pt-1">Jan 2026 — Present</span>
                 </div>
-              ))}
-            </div>
-          </section>
-
-          <section className="pb-24">
-            <div className="flex items-center gap-4 mb-12">
-              <h2 className="text-xs font-bold uppercase tracking-[0.3em] text-zinc-400">Background</h2>
-              <div className="h-[1px] flex-1 bg-zinc-200"></div>
-            </div>
-            
-            <div className="grid md:grid-cols-2 gap-16">
-              <div className="space-y-4">
-                <h3 className="font-bold text-zinc-900 uppercase text-xs tracking-widest">Education</h3>
-                <div>
-                  <p className="font-bold text-zinc-800">University of British Columbia</p>
-                  <p className="text-zinc-500 text-sm">B.A.Sc. Computer Engineering</p>
-                  <p className="text-indigo-600 text-[10px] font-bold mt-1 uppercase tracking-widest">Graduating 2028</p>
-                </div>
+                <p className="text-zinc-400 text-sm leading-relaxed max-w-3xl">
+                  Developing robust power management firmware on STM32 platforms. Engineering efficient power-switching logic and charging protocols to maximize energy transfer.
+                </p>
               </div>
               
-              <div className="space-y-4">
-                <h3 className="font-bold text-zinc-900 uppercase text-xs tracking-widest">Involvement</h3>
-                <div className="space-y-6">
-                  <div>
-                    <p className="font-bold text-zinc-800">UBC AgroBot</p>
-                    <p className="text-zinc-500 text-sm italic">Firmware Engineer</p>
-                  </div>
-                  <div>
-                    <p className="font-bold text-zinc-800">Hot Potato Initiative</p>
-                    <p className="text-zinc-500 text-sm italic">President</p>
-                  </div>
+              <div className="relative pl-8 border-l border-zinc-800">
+                <div className="flex flex-col md:flex-row md:justify-between mb-2">
+                  <h3 className="text-xl font-bold text-zinc-400">Ride Operator | Playland PNE</h3>
+                  <span className="text-xs text-zinc-600 font-bold uppercase tracking-widest pt-1">Aug 2025 — Sept 2025</span>
                 </div>
+                <p className="text-zinc-500 text-sm leading-relaxed max-w-3xl">
+                  Performed routine diagnostics and troubleshooting of computer-controlled ride systems to ensure optimal safety.
+                </p>
               </div>
             </div>
-          </section>
+          </div>
+        </div>
+      </section>
 
-        </main>
-      </div>
+      {/* SECTION 3: PERSONAL PROJECTS */}
+      <section className="h-screen w-full snap-start flex items-center justify-center p-6 bg-[#050505]">
+        <div className="max-w-5xl w-full border border-zinc-800 rounded-xl overflow-hidden bg-black/40 shadow-2xl">
+          <div className="bg-zinc-900/50 px-4 py-2 border-b border-zinc-800">
+            <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest">Directory: /home/viren/projects</span>
+          </div>
+          <div className="p-8 md:p-12 overflow-y-auto max-h-[70vh]">
+            <h2 className="text-white text-3xl font-bold mb-10 flex items-center gap-4">
+              <span className="text-emerald-500 text-xl font-mono">02.</span> Projects.exe
+            </h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              {projects.filter(p => p.title !== "UBC AgroBot | Firmware Engineer").map((p) => (
+                <div key={p.title} className="p-6 bg-zinc-900/20 border border-zinc-800 rounded-lg group hover:border-emerald-500/50 transition-all">
+                  <h3 className="text-lg font-bold text-white group-hover:text-emerald-400 mb-3">{p.title}</h3>
+                  <p className="text-zinc-500 text-xs leading-relaxed mb-4">{p.description}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {p.tech.map(t => (
+                      <span key={t} className="text-[9px] px-2 py-0.5 bg-black text-zinc-600 border border-zinc-800 rounded uppercase">{t}</span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 4: CONTACT & LINKS */}
+      <section className="h-screen w-full snap-start flex items-center justify-center p-6 bg-[#09090b]">
+        <div className="text-center space-y-12">
+          <div className="p-12 border border-emerald-900/20 bg-emerald-950/5 rounded-2xl">
+            <h2 className="text-emerald-500 font-bold text-sm tracking-[0.4em] uppercase mb-10">Communications_Link</h2>
+            <div className="flex flex-col gap-6 items-center">
+              <a href="mailto:virendesai711@gmail.com" className="text-white hover:text-emerald-400 transition-colors border-b border-zinc-800 pb-1">virendesai711@gmail.com</a>
+              <div className="flex gap-8 text-[11px] font-bold uppercase tracking-widest text-zinc-500">
+                <a href="#" className="hover:text-white transition-colors">LinkedIn</a>
+                <a href="#" className="hover:text-white transition-colors">GitHub</a>
+              </div>
+              <div className="pt-8">
+                <a href="/Viren Desai - Resume.pdf" target="_blank" className="px-12 py-5 bg-emerald-500 text-black font-black hover:bg-white transition-all text-sm uppercase tracking-widest shadow-[0_0_30px_rgba(16,185,129,0.1)]">
+                  Download_Resume.pdf
+                </a>
+              </div>
+            </div>
+          </div>
+          <p className="text-zinc-600 text-[10px] uppercase tracking-[0.3em]">Available for Co-op May 2026</p>
+        </div>
+      </section>
+
     </div>
   );
 }
