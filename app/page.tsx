@@ -31,7 +31,7 @@ export default function Home() {
             <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest">File: /etc/system_specs</span>
           </div>
           <div className="p-8 md:p-16">
-            <h2 className="text-white text-3xl font-bold mb-10 flex items-center gap-4">
+            <h2 className="text-white text-2xl md:text-3xl font-bold mb-6 md:mb-10 flex items-center gap-4">
               <span className="text-emerald-500 text-xl font-mono">01.</span> Core_Dependencies
             </h2>
             <div className="grid md:grid-cols-3 gap-12 text-sm leading-relaxed">
@@ -83,7 +83,7 @@ export default function Home() {
                 <div className="absolute left-[-5px] top-1.5 w-2 h-2 bg-emerald-500 rounded-full shadow-[0_0_10px_#10b981]" />
                 <div className="flex flex-col md:flex-row md:justify-between mb-2">
                   <h3 className="text-xl font-bold text-white uppercase italic">University of British Columbia</h3>
-                  <span className="text-xs text-zinc-500 font-bold tracking-widest pt-1 italic uppercase underline underline-offset-4 decoration-emerald-500">Expected May 2028</span>
+                  <span className="text-xs text-zinc-500 font-bold tracking-widest pt-1 italic uppercase underline underline-offset-4 decoration-emerald-500">Expected Graduation May 2028</span>
                 </div>
                 <p className="text-zinc-100 text-sm font-bold mb-2">Bachelor of Applied Science - Computer Engineering</p>
                 <p className="text-zinc-500 text-sm leading-relaxed max-w-3xl italic">
@@ -155,8 +155,8 @@ export default function Home() {
             <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest">Directory: /home/viren/projects</span>
           </div>
           <div className="p-8 md:p-12">
-            <h2 className="text-white text-3xl font-bold mb-10 flex items-center gap-4 text-emerald-500">
-              04. Projects.exe
+            <h2 className="text-white text-3xl font-bold mb-10 flex items-center gap-4">
+              <span className="text-emerald-500 text-xl font-mono">04.</span> Projects.exe
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               {projects.map((p) => (
