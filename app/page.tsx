@@ -187,7 +187,7 @@ export default function Home() {
                 <a href="#" className="hover:text-white transition-colors">GitHub</a>
               </div>
               <div className="pt-8">
-                <a href="/Viren Desai - Resume.pdf" target="_blank" className="px-12 py-5 bg-emerald-500 text-black font-black hover:bg-white transition-all text-sm uppercase tracking-widest shadow-[0_0_30px_rgba(16,185,129,0.1)]">
+                <a href="/Viren Desai Resume.pdf" target="_blank" className="px-12 py-5 bg-emerald-500 text-black font-black hover:bg-white transition-all text-sm uppercase tracking-widest shadow-[0_0_30px_rgba(16,185,129,0.1)]">
                   Download_Resume.pdf
                 </a>
               </div>
