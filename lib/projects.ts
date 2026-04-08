@@ -22,5 +22,5 @@ export const projects = [
 export const contact = {
   email: "virendesai711@gmail.com",
   github: "https://github.com/VirenD101",
-  linkedin: "https://linkedin.com/in/viren-desai-8848aa351"
+  linkedin: "https://linkedin.com/in/virendesai711"
 };
