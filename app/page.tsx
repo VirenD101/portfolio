@@ -90,7 +90,7 @@ export default function Home() {
                   Specializing in hardware-software integration, digital logic, and firmware development.
                 </p>
                 <p className="text-zinc-500 text-sm leading-relaxed max-w-3xl italic">
-                  Available for Co-Op in May 2026.
+                  Available for Co-Op as soon as possible.
                 </p>
               </div>
               
@@ -126,21 +126,29 @@ export default function Home() {
               <div className="relative pl-8 border-l border-emerald-500/30">
                 <div className="absolute left-[-5px] top-1.5 w-2 h-2 bg-emerald-500 rounded-full shadow-[0_0_10px_#10b981]" />
                 <div className="flex flex-col md:flex-row md:justify-between mb-2">
-                  <h3 className="text-xl font-bold text-white">Firmware Engineer | UBC AgroBot</h3>
-                  <span className="text-xs text-zinc-500 font-bold uppercase tracking-widest pt-1">Jan 2026 — Present</span>
+                  <h3 className="text-xl font-bold text-white">Data Analyst Student | National Research Council Canada</h3>
+                  <span className="text-xs text-zinc-500 font-bold uppercase tracking-widest pt-1">Sep 2026 — Present</span>
                 </div>
                 <p className="text-zinc-400 text-sm leading-relaxed max-w-3xl">
-                  Developing robust power management firmware on STM32 platforms. Engineering efficient power-switching logic and charging protocols to maximize energy transfer.
-                </p>
+Analyzed hydrodynamic datasets using Python to model the impact of hull and propeller cleaning on ship powering.</p>
+              </div>
+
+              <div className="relative pl-8 border-l border-zinc-800">
+                <div className="flex flex-col md:flex-row md:justify-between mb-2">
+                  <h3 className="text-xl font-bold text-zinc-400">Lead Coding Instructor | Code Ninjas</h3>
+                  <span className="text-xs text-zinc-600 font-bold uppercase tracking-widest pt-1">June 2026 — Present</span>
+                </div>
+                <p className="text-zinc-500 text-sm leading-relaxed max-w-3xl">
+Delivered core programming and algorithms curriculum while guiding hands-on lab projects and debugging student code.</p>
               </div>
               
               <div className="relative pl-8 border-l border-zinc-800">
                 <div className="flex flex-col md:flex-row md:justify-between mb-2">
-                  <h3 className="text-xl font-bold text-zinc-400">Ride Operator | Playland PNE</h3>
-                  <span className="text-xs text-zinc-600 font-bold uppercase tracking-widest pt-1">Aug 2025 — Sept 2025</span>
+                  <h3 className="text-xl font-bold text-zinc-400">Firmware Engineer | UBC AgroBot</h3>
+                  <span className="text-xs text-zinc-600 font-bold uppercase tracking-widest pt-1">Jan 2026 - Aug 2026</span>
                 </div>
                 <p className="text-zinc-500 text-sm leading-relaxed max-w-3xl">
-                  Performed routine diagnostics and troubleshooting of computer-controlled ride systems to ensure optimal safety.
+                  Developed STM32 power management firmware, telemetry monitoring, and battery-charging protocols to extend field operation.
                 </p>
               </div>
             </div>
@@ -187,7 +195,7 @@ export default function Home() {
                 <a href="#" className="hover:text-white transition-colors">GitHub</a>
               </div>
               <div className="pt-8">
-                <a href="/Viren Desai Resume.pdf" target="_blank" className="px-12 py-5 bg-emerald-500 text-black font-black hover:bg-white transition-all text-sm uppercase tracking-widest shadow-[0_0_30px_rgba(16,185,129,0.1)]">
+                <a href="/Resume - Viren Desai.pdf" target="_blank" className="px-12 py-5 bg-emerald-500 text-black font-black hover:bg-white transition-all text-sm uppercase tracking-widest shadow-[0_0_30px_rgba(16,185,129,0.1)]">
                   Download_Resume.pdf
                 </a>
               </div>
